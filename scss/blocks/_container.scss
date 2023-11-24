@@ -1,8 +1,15 @@
 /*CONTAINER*/
 .container {
   width: 100%;
-  max-width: 1232px;
+  max-width: 1244px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+@include breakpoint-down(375px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
