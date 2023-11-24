@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,67 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <button class="site-header__burger" aria-expanded="true">
+        <span class="site-header__burger-icon">
+          <img src="images/icons/burger.svg" alt="" width="24" height="24">
+        </span>
+      </button>
+      <a class="site-header__logo logo" href="index.html">
+        <img class="logo__img" src="images/logo.svg" alt="Delever logo" width="65" height="20">
+      </a>
+      <aside class="site-header__sidebar">
+        <header class="site-header__sidebar-top">
+          <h2 class="site-header__sidebar-title">Меню</h2>
+          <button class="site-header__sidebar-close" aria-hidden="true">
+            <img src="images/icons/close.svg" alt="" width="20" height="20">
+          </button>
+        </header>
+        <select aria-hidden="true" class="site-header__sidebar-language" name="language-mobile" aria-label="Язык">
+          <option value="uz">O'zbek</option>
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+        <a class="site-header__sidebar-login" href="#" aria-hidden="true">Войти</a>
+        <nav class="site-header__nav" role="navigation" aria-label="Меню">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item"><a class="site-header__nav-link nav-link" href="#">Меню</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link nav-link" href="#">Филиалы</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link nav-link" href="#">О нас</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="site-header__location">
+        <span class="site-header__location-icon main-icon main-icon--sm">
+          <img src="images/icons/mark.svg" alt="" width="18" height="18">
+        </span>
+        <div class="site-header__location-info">
+          <span class="site-header__location-title">Достафка или Заказ с собой</span>
+          <a class="site-header__location-link" href="https://www.google.com/maps" target="_blank">Выберите способ получения</a>
+        </div>
+      </div>
+      <a class="site-header__cart main-icon" href="#">
+        <img src="images/icons/cart.svg" alt="" width="20" height="20">
+      </a>
+      <div class="site-header__language-dropdown-wrapper">
+        <img class="site-header__language-icon" src="images/icons/russian-flag.svg" alt="flag" width="18" height="18" />
+        <span class="site-header__language-arrow">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <rect width="20" height="20" transform="matrix(0 -1 1 0 0 20.5)" fill="white" fill-opacity="0.01"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16246 12.9962L5.33496 9.16875C5.25708 9.09242 5.19511 9.00142 5.15262 8.901C5.11013 8.80058 5.08796 8.69273 5.08741 8.58369C5.08686 8.47465 5.10793 8.36658 5.14941 8.26573C5.19088 8.16489 5.25194 8.07326 5.32904 7.99616C5.40614 7.91905 5.49777 7.858 5.59861 7.81652C5.69946 7.77505 5.80753 7.75398 5.91657 7.75453C6.02561 7.75508 6.13346 7.77724 6.23388 7.81973C6.3343 7.86222 6.42531 7.9242 6.50163 8.00208L9.75163 11.2521L13.0016 8.00208C13.1569 7.84994 13.3659 7.76522 13.5832 7.76631C13.8006 7.76741 14.0087 7.85424 14.1624 8.00794C14.3161 8.16164 14.403 8.36978 14.4041 8.58714C14.4052 8.8045 14.3204 9.0135 14.1683 9.16875L10.3416 12.9962C10.1854 13.1525 9.97343 13.2402 9.75246 13.2402C9.53149 13.2402 9.31957 13.1525 9.16329 12.9962H9.16246Z" fill="black"/>
+          </svg>
+        </span>
+        <select class="site-header__language-dropdown" aria-hidden="false" name="language" aria-label="Язык">
+          <option value="uz">O’zbekchа</option>
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <a class="site-header__login-link" href="#">Войти</a>
+    </div>
+  </header>
 
 </body>
 </html>

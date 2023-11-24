@@ -1,0 +1,147 @@
+.site-header {
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__burger {
+  @include reset-btn;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.site-header__logo {
+  margin-right: 40px;
+}
+
+.site-header__sidebar {
+  margin-right: auto;
+}
+
+.site-header__sidebar-top {
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.site-header__sidebar-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.site-header__sidebar-close {
+  @include reset-btn;
+}
+
+.site-header__sidebar-language {
+  display: none;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid $color-primary;
+  border-radius: 12px;
+  background-color: $color-light;
+}
+
+.site-header__sidebar-login {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $color-primary;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border-bottom: 1px solid $color-border;
+}
+
+// .site-header__nav {
+// }
+
+.site-header__nav-list {
+  @include list-unstyled;
+  display: flex;
+}
+
+.site-header__nav-item {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+// .site-header__nav-link {
+// }
+
+.site-header__location {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.site-header__location-icon {
+  margin-right: 8px;
+}
+
+.site-header__location-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header__location-title {
+  margin-bottom: 4px;
+}
+
+.site-header__location-link {
+  color: $color-primary;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.site-header__cart {
+  margin-right: 12px;
+}
+
+.site-header__language-dropdown-wrapper {
+  width: 66px;
+  height: 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 12px;
+  border-radius: 155px;
+  margin-right: 16px;
+  opacity: 0.7;
+  background-color: $color-active;
+  cursor: pointer;
+}
+
+.site-header__language-icon {
+  margin-right: 8px;
+}
+
+.site-header__language-dropdown {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.site-header__login-link {
+  padding: 6px 12px;
+  color: $color-primary;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  border-radius: 155px;
+  background-color: $color-active;
+}
