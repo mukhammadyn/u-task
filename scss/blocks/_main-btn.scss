@@ -1,0 +1,8 @@
+.main-btn {
+  @include reset-btn;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: $color-light;
+  border-radius: 20px;
+  background-color: $color-primary;
+}

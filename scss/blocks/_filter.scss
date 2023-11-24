@@ -1,0 +1,27 @@
+.filter {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  overflow: auto;
+}
+
+.filter__list {
+  @include list-unstyled;
+  display: flex;
+}
+
+.filter__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter__item-link {
+  padding: 12px 16px;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+.filter__item-link--active {
+  color: $color-primary;
+  background-color: $color-active;
+}
